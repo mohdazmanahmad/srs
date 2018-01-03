@@ -5,12 +5,12 @@ from django.db import models
 class Student(models.Model):
 
 	PROGRAMMING = 'PR'
-	NETWORKING = 'NTWRK'
+	NETWORKING = 'NT'
 	PCTECH = 'PC'
 	COURSE_CHOICES = (
 		(PROGRAMMING, 'Programming'),
 		(NETWORKING, 'Networking'),
-		(PCTECH, 'PC Technician'),
+		(PCTECH, 'PC Technichian'),
 	)
 
 	icnum = models.CharField('IC Number',max_length=12,unique=True,blank=False,null=False)
